@@ -1,0 +1,128 @@
+
+h1{
+    border-color: red;
+    border-bottom-style: dashed;
+    border-top-style: dashed;
+    position:   relative; 
+top: 0px 
+    
+}
+.body{
+    font-family: sans-serif;
+    background-image: linear-gradient(rgba(39, 34, 34, 0.75),rgba(0,0,0,0.75)),url("/Images/Alo.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    right:10px; 
+}
+
+.Menubar
+{
+background-color: black;
+height: 60px;
+width: 100.5%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0.5%;
+}
+.logo{
+    color: whitesmoke;
+    font-size: 40px;
+}
+.logo span{
+    color: red;
+}
+
+.Menubar ul {
+    list-style: none;
+    display: flex;
+}
+.Menubar ul li {
+    padding: 20px 50px;
+    padding-top: center;
+    position:relative
+}
+.Menubar ul li a {
+color: whitesmoke;
+text-decoration: none;
+font-size: 20px;
+}
+.active, .Menubar ul li:hover{
+    background: #222;
+    border-radius: 3px;
+}
+.dropdown_menu{
+    display: none;
+}
+.Menubar ul li:hover .dropdown_menu{
+   display:block;
+   position:absolute;
+   left:0;
+   top:100%;
+   background-color: black;
+}
+
+.Menubar ul li:hover .dropdown_menu ul {
+    display:block;
+    margin: 5px;
+}
+.Menubar ul li:hover .dropdown_menu ul li {
+    width:70px;
+    padding: 20px;  
+    text-align: left;
+    justify-content: center;
+}
+
+.strategy_pic{
+    cursor: row-resize;
+    right: 10%;
+    position:fixed;
+    width:400px;
+    top: 30%;
+    }
+.content{
+        width: 50%;
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+        color: whitesmoke;
+        font-size: 25px;
+}
+button{
+width: 200px;
+padding: 15px 0;
+text-align: center;
+margin: 20px 10px;
+border-radius: 25px;
+font-weight: bold;
+border: 2px solid #009688;
+background:transparent;
+color: #fff;
+cursor:pointer;
+position: relative;
+overflow: hidden;
+margin-left:7%;
+}
+#span3{
+    background: #009688;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover #span3 {
+    width: 100%;
+}
+button:hover{
+    border:none;
+}
+#span1{
+    margin-left: 10%;
+}

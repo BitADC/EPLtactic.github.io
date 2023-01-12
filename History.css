@@ -1,0 +1,89 @@
+h1{
+    border-color: red;
+    border-bottom-style: dashed;
+    border-top-style: dashed;
+    position:   relative; 
+top: 0px 
+    
+}
+.body{
+    font-family: sans-serif;
+    background-image: linear-gradient(rgba(39, 34, 34, 0.75),rgba(0,0,0,0.75)),url("/Images/Alo.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.Menubar
+{
+background-color: black;
+height: 90px;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 5%;
+position: relative;
+top:-380px;
+right:10px;
+}
+.logo{
+    color: whitesmoke;
+    font-size: 40px;
+}
+.logo span{
+    color: red;
+}
+
+.Menubar ul {
+    list-style: none;
+    display: flex;
+}
+.Menubar ul li {
+    padding: 20px 50px;
+    padding-top: center;
+    position:relative
+}
+.Menubar ul li a {
+color: whitesmoke;
+text-decoration: none;
+font-size: 20px;
+}
+.active, .Menubar ul li:hover{
+    background: #222;
+    border-radius: 3px;
+}
+.dropdown_menu{
+    display: none;
+}
+.Menubar ul li:hover .dropdown_menu{
+   display:block;
+   position:absolute;
+   left:0;
+   top:100%;
+   background-color: black;
+}
+
+.Menubar ul li:hover .dropdown_menu ul {
+    display:block;
+    margin: 10px;
+}
+.Menubar ul li:hover .dropdown_menu ul li {
+    width:70px;
+    padding-left:0px;
+}
+.div_0{
+    color:whitesmoke;
+    position:relative;
+    top:120px;
+}
+.img_F{
+    width:480px;
+    float:right;
+    margin:10px;
+}
+.p2{
+    text-align: justify;
+}
